@@ -15,7 +15,7 @@ export interface GithubRepo {
  */
 export async function fetchGithubRepos(username: string): Promise<GithubRepo[]> {
   const res = await fetch(
-    `https://api.github.com/users/${username}/repos?sort=updated&per_page=15`,
+    `https://api.github.com/users/${kenkairon}/repos?sort=updated&per_page=15`,
     { headers: { Accept: "application/vnd.github+json" } }
   );
 
