@@ -12,7 +12,7 @@ export interface GrokMessage {
 const WORKER_URL = "https://grok-dejavoo-proxy.kenkairon.workers.dev";
 
 export async function askGrok(messages: GrokMessage[]): Promise<string> {
-  if (WORKER_URL.includes("TU-SUBDOMINIO")) {
+  if (WORKER_URL.includes("https://kenkairon.workers.dev")) {
     throw new Error("Falta configurar la URL del Worker en lib/grok.ts (ver README, sección Dejavoo).");
   }
 
