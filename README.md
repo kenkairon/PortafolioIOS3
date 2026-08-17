@@ -172,6 +172,7 @@ Te va a pedir que pegues la key — queda guardada de forma segura en Cloudflare
 **5. Despliega el Worker**
 ```bash
 wrangler deploy
+
 ```
 Al terminar te da una URL parecida a:
 ```
