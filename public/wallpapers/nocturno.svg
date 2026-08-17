@@ -1,0 +1,28 @@
+<svg viewBox="0 0 1080 2340" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#05070d"/>
+      <stop offset="55%" stop-color="#16213a"/>
+      <stop offset="100%" stop-color="#2b3f66"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#cfe8ff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#cfe8ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5e5ce6" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#5e5ce6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blurS"><feGaussianBlur stdDeviation="8"/></filter>
+    <filter id="blurL"><feGaussianBlur stdDeviation="130"/></filter>
+  </defs>
+  <rect width="1080" height="2340" fill="url(#bg)"/>
+  <circle cx="780" cy="380" r="90" fill="url(#moon)" filter="url(#blurS)"/>
+  <ellipse cx="300" cy="1600" rx="480" ry="420" fill="url(#glow)" filter="url(#blurL)"/>
+  <ellipse cx="850" cy="2050" rx="360" ry="320" fill="url(#glow)" filter="url(#blurL)" opacity="0.6"/>
+  <g fill="#ffffff" opacity="0.7">
+    <circle cx="150" cy="220" r="2.5"/><circle cx="380" cy="150" r="2"/><circle cx="620" cy="260" r="2.5"/>
+    <circle cx="920" cy="180" r="2"/><circle cx="80" cy="520" r="2"/><circle cx="500" cy="480" r="2.5"/>
+    <circle cx="960" cy="620" r="2"/><circle cx="220" cy="720" r="2.5"/><circle cx="700" cy="700" r="2"/>
+  </g>
+</svg>

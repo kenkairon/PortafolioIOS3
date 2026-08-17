@@ -1,0 +1,3 @@
+name = "grok-dejavoo-proxy"
+main = "grok-proxy.js"
+compatibility_date = "2026-01-01"
