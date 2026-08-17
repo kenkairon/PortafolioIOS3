@@ -9,7 +9,7 @@
 
 // Cambia esto por tu dominio real antes de desplegar.
 const ALLOWED_ORIGINS = [
-  "t https://kenkairon.github.io/PortafolioIOS3/", // tu sitio en GitHub Pages
+  "https://kenkairon.github.io/PortafolioIOS3/", // tu sitio en GitHub Pages
 ];
 
 const MODEL = "openai/gpt-oss-120b";
