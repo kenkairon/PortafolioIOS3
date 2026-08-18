@@ -109,7 +109,7 @@ export const appColors: Record<string, string> = {
   contacto: "linear-gradient(160deg, #5AC8FA, #007AFF)",
   ajustes: "linear-gradient(160deg, #8E8E93, #636366)",
   chat: "linear-gradient(160deg, #4285F4, #9B72CB, #D96570)",
-  dejavoo: "linear-gradient(160deg, #F97316, #DB2777)",
+  dejavoo: "linear-gradient(160deg, #243B53, #102A43)",
 };
 
 // Frases del gato asistente
