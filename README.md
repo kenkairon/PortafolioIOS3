@@ -182,7 +182,7 @@ https://grok-dejavoo-proxy.tu-subdominio.workers.dev
 **6. Conecta tu app a esa URL**
 En `lib/grok.ts`, reemplaza:
 ```ts
-const WORKER_URL = "https://kenkairon.workers.dev";
+const WORKER_URL = "https://grok-dejavoo-proxy.kenkairon.workers.dev";
 ```
 por la URL real que te dio `wrangler deploy`. (No es información sensible — es solo la dirección pública de tu proxy; la key de verdad sigue escondida adentro del Worker.)
 
