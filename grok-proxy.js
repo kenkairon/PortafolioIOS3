@@ -9,7 +9,7 @@
 
 // Cambia esto por tu dominio real antes de desplegar.
 const ALLOWED_ORIGINS = [
-  "https://kenkairon.github.io",
+  "https://kenkairon.github.io/PortafolioIOS3",
   "http://localhost:3000", // para probar en desarrollo
   "http://localhost:3001", // Next.js usa este puerto si el 3000 está ocupado
 ];
