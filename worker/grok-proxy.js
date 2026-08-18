@@ -9,7 +9,7 @@
 
 // Cambia esto por tu dominio real antes de desplegar.
 const ALLOWED_ORIGINS = [
-  "https://kenkairon.github.io/PortafolioIOS3", // tu sitio en GitHub Pages
+  "https://kenkairon.github.io", // tu sitio en GitHub Pages
   "http://localhost:3000", // para probar en desarrollo
 ];
 
