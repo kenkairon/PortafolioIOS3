@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: -apple-system, "SF Pro Text", "SF Pro Display", system-ui, sans-serif;
+  color: #1c1c1e;
+  transition: background 0.4s ease;
+}
+
+/* Liquid Glass — el material translúcido de iOS 26 */
+.glass {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.dark .glass {
+  background: rgba(28, 28, 30, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #f2f2f7;
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(34px) saturate(180%);
+  -webkit-backdrop-filter: blur(34px) saturate(180%);
+}
+
+.dark .glass-strong {
+  background: rgba(20, 20, 22, 0.72);
+}
+
+.win-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.win-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.win-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Squircle real (superellipse) para íconos tipo iOS, vía SVG clip-path is overkill —
+   usamos un radio grande que se aproxima bien al squircle de Apple */
+.squircle {
+  border-radius: 26%;
+}
