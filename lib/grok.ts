@@ -9,7 +9,7 @@ export interface GrokMessage {
 // URL pública de tu Worker (no es secreta, es solo el endpoint del proxy;
 // la key real está protegida adentro del Worker). Cámbiala por la tuya
 // después de desplegar, ver README.
-const WORKER_URL = "https://grok-dejavoo-proxy.TU-SUBDOMINIO.workers.dev";
+const WORKER_URL = "https://grok-dejavoo-proxy.kenkairon.workers.dev";
 
 export async function askGrok(messages: GrokMessage[]): Promise<string> {
   if (WORKER_URL.includes("TU-SUBDOMINIO")) {
