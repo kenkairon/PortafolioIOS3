@@ -249,9 +249,8 @@ export default function Home() {
                 <div
                   key={p.titulo}
                   id={`project-${p.titulo}`}
-                  className={`rounded-2xl bg-black/[0.03] dark:bg-white/5 border border-black/5 dark:border-white/10 p-4 transition-all duration-500 ${
-                    highlighted === `project-${p.titulo}` ? "ring-2 ring-ios-blue" : ""
-                  }`}
+                  className={`rounded-2xl bg-black/[0.03] dark:bg-white/5 border border-black/5 dark:border-white/10 p-4 transition-all duration-500 ${highlighted === `project-${p.titulo}` ? "ring-2 ring-ios-blue" : ""
+                    }`}
                 >
                   <h3 className="text-[14px] font-semibold text-ios-text dark:text-white mb-1">{p.titulo}</h3>
                   <p className="text-[12.5px] text-ios-textSub dark:text-white/60 mb-2 leading-relaxed">{p.descripcion}</p>
@@ -362,9 +361,8 @@ export default function Home() {
                   key={w.id}
                   title={w.nombre}
                   onClick={() => changeWallpaper(w.id)}
-                  className={`w-14 h-14 rounded-2xl border-2 bg-cover bg-center transition-all ${
-                    wallpaperId === w.id ? "border-ios-blue scale-105" : "border-transparent"
-                  }`}
+                  className={`w-14 h-14 rounded-2xl border-2 bg-cover bg-center transition-all ${wallpaperId === w.id ? "border-ios-blue scale-105" : "border-transparent"
+                    }`}
                   style={{ backgroundImage: `url(${w.src})` }}
                 />
               ))}
@@ -383,9 +381,8 @@ export default function Home() {
               </span>
               <span className={`w-11 h-6 rounded-full relative transition-colors ${dark ? "bg-ios-green" : "bg-black/20"}`}>
                 <span
-                  className={`absolute top-0.5 w-5 h-5 rounded-full bg-white transition-all shadow ${
-                    dark ? "left-5" : "left-0.5"
-                  }`}
+                  className={`absolute top-0.5 w-5 h-5 rounded-full bg-white transition-all shadow ${dark ? "left-5" : "left-0.5"
+                    }`}
                 />
               </span>
             </button>
