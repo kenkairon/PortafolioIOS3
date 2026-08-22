@@ -11,6 +11,7 @@ import {
   MessageCircle,
   Cat,
   FileSearch,
+  Activity,
   ArrowUpRight,
   Copy,
   Check,
@@ -25,6 +26,7 @@ import SkillBar from "@/components/SkillBar";
 import ChatBot from "@/components/ChatBot";
 import DejavooChat from "@/components/DejavooChat";
 import RagChat from "@/components/RagChat";
+import EarthquakeApp from "@/components/EarthquakeApp";
 import CatGuide, { SearchResult } from "@/components/CatGuide";
 import {
   perfil,
@@ -43,7 +45,7 @@ import {
   clearStoredPreferences,
 } from "@/lib/storage";
 
-type AppKey = "sobreMi" | "habilidades" | "proyectos" | "certificaciones" | "contacto" | "ajustes" | "chat" | "dejavoo" | "rag";
+type AppKey = "sobreMi" | "habilidades" | "proyectos" | "certificaciones" | "contacto" | "ajustes" | "chat" | "dejavoo" | "rag" | "sismos";
 
 export default function Home() {
   const [openApp, setOpenApp] = useState<AppKey | null>(null);
@@ -149,6 +151,7 @@ export default function Home() {
     { key: "chat", label: "Pregúntale a Miu", icon: <MessageCircle size={26} /> },
     { key: "dejavoo", label: "Gato Dejavoo", icon: <Cat size={26} /> },
     { key: "rag", label: "Pregunta un archivo", icon: <FileSearch size={26} /> },
+    { key: "sismos", label: "Actividad Sísmica", icon: <Activity size={26} /> },
     { key: "ajustes", label: "Ajustes", icon: <Settings size={26} /> },
   ];
 
@@ -163,6 +166,7 @@ export default function Home() {
     chat: <MessageCircle size={24} />,
     dejavoo: <Cat size={24} />,
     rag: <FileSearch size={24} />,
+    sismos: <Activity size={24} />,
   };
   const appLabels: Record<AppKey, string> = {
     sobreMi: "Sobre mí",
@@ -174,6 +178,7 @@ export default function Home() {
     chat: "Pregúntale a Miu",
     dejavoo: "Gato Dejavoo",
     rag: "Pregunta un archivo",
+    sismos: "Actividad Sísmica",
   };
 
   return (
@@ -347,6 +352,12 @@ export default function Home() {
         {openApp === "rag" && (
           <AppSheet title="Pregunta un archivo" icon={<FileSearch size={16} />} gradient={appColors.rag} onClose={() => setOpenApp(null)}>
             <RagChat />
+          </AppSheet>
+        )}
+
+        {openApp === "sismos" && (
+          <AppSheet title="Actividad Sísmica" icon={<Activity size={16} />} gradient={appColors.sismos} onClose={() => setOpenApp(null)}>
+            <EarthquakeApp />
           </AppSheet>
         )}
 
