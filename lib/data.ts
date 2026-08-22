@@ -81,7 +81,7 @@ export const contacto = {
 // Usuario de GitHub del que el chatbot lee los repositorios públicos.
 // Cámbialo por tu usuario real.
 export const githubConfig = {
-  username: "kenkairon",
+  username: "TU_USUARIO_GITHUB",
 };
 
 // Fondos de escritorio: imágenes reales (SVG) en /public/wallpapers.
@@ -111,6 +111,7 @@ export const appColors: Record<string, string> = {
   chat: "linear-gradient(160deg, #4285F4, #9B72CB, #D96570)",
   dejavoo: "linear-gradient(160deg, #F97316, #DB2777)",
   rag: "linear-gradient(160deg, #14B8A6, #0EA5E9)",
+  sismos: "linear-gradient(160deg, #F59E0B, #DC2626)",
 };
 
 // Frases del gato asistente
