@@ -240,5 +240,45 @@ Ninguno nuevo — reutiliza exactamente las mismas credenciales que ya configura
 - Simular "swipe" entre páginas del home screen si agregas más apps.
 - Sonidos sutiles tipo iOS al abrir/cerrar sheets.
 
+
+## 🌎 Actividad Sísmica (USGS)
+
+Una app de monitoreo sísmico en tiempo real, con datos reales del **USGS** (Servicio Geológico de EE.UU.) — gratis, sin API key, con CORS abierto (se llama directo desde el navegador, sin proxy ni Worker).
+
+### Aviso importante — leer antes de usar/presentar esto
+**Esto NO predice terremotos.** Muestra sismos que **ya ocurrieron**, ordenados por fecha, con su magnitud, ubicación y profundidad. La ciencia actual no tiene forma de predecir con precisión cuándo y dónde va a ocurrir un sismo futuro — cualquier producto que lo prometa no es honesto. La app deja esto explícito con un aviso fijo arriba de la lista.
+
+Lo que sí es real y útil:
+- Monitoreo en tiempo real de la actividad sísmica reciente.
+- Filtro por Chile (usando una caja delimitadora del territorio) o vista mundial.
+- Clasificación visual por severidad de magnitud.
+
+### Cómo funciona
+- **Chile**: consulta el endpoint de búsqueda del USGS (`/fdsnws/event/1/query`) filtrando por coordenadas de Chile, últimos 7 días, magnitud 2.5+.
+- **Mundo**: usa los feeds pre-armados del USGS (`/earthquakes/feed/v1.0/summary/2.5_week.geojson`).
+- Cada resultado enlaza a la página oficial del evento en USGS para más detalle.
+
+### Requisitos
+Ninguno — no hace falta API key ni configuración. Funciona apenas lo despliegues.
+
+### Archivos involucrados
+- `lib/earthquakes.ts` — cliente de la API del USGS, clasificación de severidad, formato de tiempo relativo.
+- `components/EarthquakeApp.tsx` — la interfaz, con el aviso y el selector Chile/Mundo.
+
+## 🧩 Cómo agregar una nueva "app" (sección)
+
+1. Agrega los datos en `lib/data.ts` (y un color en `appColors` si quieres un ícono nuevo).
+2. Agrega la key al tipo `AppKey` en `app/page.tsx`.
+3. Copia un bloque `<AppSheet>...</AppSheet>` existente, cámbiale el ícono/gradiente y el contenido.
+4. Agrégalo al arreglo `grid` (cuadrícula) y, si quieres, a `dockApps` (dock inferior).
+
+## 🐾 Ideas para seguir extendiendo
+- Reemplazar el emoji del gato por una ilustración SVG personalizada o animada (Lottie).
+- Agregar más "personajes" de presentación (ej. un compañero que muestre certificaciones).
+- Simular "swipe" entre páginas del home screen si agregas más apps.
+- Sonidos sutiles tipo iOS al abrir/cerrar sheets.
+
 ## 📦 Dependencias principales
 - `next` 14.2.35 · `react` 18 · `tailwindcss` 3 · `lucide-react` (íconos)
+
+
