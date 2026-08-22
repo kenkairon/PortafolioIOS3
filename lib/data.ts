@@ -81,7 +81,7 @@ export const contacto = {
 // Usuario de GitHub del que el chatbot lee los repositorios públicos.
 // Cámbialo por tu usuario real.
 export const githubConfig = {
-  username: "TU_USUARIO_GITHUB",
+  username: "kenkairon",
 };
 
 // Fondos de escritorio: imágenes reales (SVG) en /public/wallpapers.
