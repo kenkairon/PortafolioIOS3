@@ -151,7 +151,7 @@ export default function Home() {
     { key: "chat", label: "Pregúntale a Miu", icon: <MessageCircle size={26} /> },
     { key: "dejavoo", label: "Gato Dejavoo", icon: <Cat size={26} /> },
     { key: "rag", label: "Pregunta un archivo", icon: <FileSearch size={26} /> },
-    { key: "sismos", label: "Actividad Sísmica", icon: <Activity size={26} /> },
+    { key: "sismos", label: "Riesgos Naturales", icon: <Activity size={26} /> },
     { key: "ajustes", label: "Ajustes", icon: <Settings size={26} /> },
   ];
 
@@ -178,7 +178,7 @@ export default function Home() {
     chat: "Pregúntale a Miu",
     dejavoo: "Gato Dejavoo",
     rag: "Pregunta un archivo",
-    sismos: "Actividad Sísmica",
+    sismos: "Riesgos Naturales",
   };
 
   return (
@@ -356,7 +356,7 @@ export default function Home() {
         )}
 
         {openApp === "sismos" && (
-          <AppSheet title="Actividad Sísmica" icon={<Activity size={16} />} gradient={appColors.sismos} onClose={() => setOpenApp(null)}>
+          <AppSheet title="Riesgos Naturales" icon={<Activity size={16} />} gradient={appColors.sismos} onClose={() => setOpenApp(null)}>
             <EarthquakeApp />
           </AppSheet>
         )}
