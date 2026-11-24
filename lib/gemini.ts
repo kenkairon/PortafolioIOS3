@@ -6,7 +6,7 @@
 // si la petición viene desde tu dominio de GitHub Pages.
 // Ver el README para el paso a paso de cómo crear y restringir la key.
 
-const GEMINI_MODEL = "gemini-3.6-flash";
+const GEMINI_MODEL = "gemini-3.5-flash";
 const API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
 
 export interface ChatMessage {
