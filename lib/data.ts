@@ -4,7 +4,7 @@ export const perfil = {
   objetivo:
     "Desarrollarme profesionalmente como Desarrollador Full Stack, participando en el diseño, desarrollo e implementación de aplicaciones web utilizando tecnologías como JavaScript, Python (Django) y Ruby on Rails. Busco integrarme a un equipo de desarrollo donde pueda aplicar mis conocimientos en tecnologías Front-End y Back-End, bases de datos MySQL y PostgreSQL, control de versiones con Git y GitHub, y metodologías ágiles. Mi objetivo es contribuir a la creación de soluciones tecnológicas eficientes, seguras y escalables, fortalecer mis competencias técnicas, adquirir experiencia profesional y asumir nuevos desafíos que me permitan crecer dentro del área de desarrollo de software.",
   sobreMi:
-    "Desarrollador Full Stack enfocado en la optimización de bases de datos y el equilibrio entre front-end y back-end para crear aplicaciones funcionales y atractivas. Busco un entorno donde crecer profesionalmente, asumir nuevos retos y aportar valor con mi trabajo.",
+    "Desarrollador Full Stack con conocimientos en tecnologías Front-End y Back-End, desarrollo de aplicaciones web y gestión de bases de datos. Orientado a la creación de soluciones tecnológicas funcionales, eficientes y escalables, combinando conocimientos de programación y trabajo colaborativo. Me interesa participar en proyectos de desarrollo de software, aportar soluciones a problemas reales y continuar fortaleciendo mis competencias técnicas.",
   intereses: [
     "Fútbol",
     "Ping pong",
