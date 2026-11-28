@@ -143,7 +143,7 @@ export default function Home() {
   }, [searchQuery]);
 
   const grid: { key: AppKey; label: string; icon: JSX.Element }[] = [
-    { key: "sobreMi", label: "Sobre mí", icon: <User size={26} /> },
+    { key: "sobreMi", label: "Perfil", icon: <User size={26} /> },
     { key: "habilidades", label: "Habilidades", icon: <Code2 size={26} /> },
     { key: "proyectos", label: "Proyectos", icon: <FolderKanban size={26} /> },
     { key: "certificaciones", label: "Certificados", icon: <Award size={26} /> },
@@ -212,19 +212,14 @@ export default function Home() {
 
         {/* --- Sheets de cada app --- */}
         {openApp === "sobreMi" && (
-          <AppSheet title="Sobre mí" icon={<User size={16} />} gradient={appColors.sobreMi} onClose={() => setOpenApp(null)}>
+          <AppSheet title="Perfil" icon={<User size={16} />} gradient={appColors.sobreMi} onClose={() => setOpenApp(null)}>
             <h1 className="text-xl font-semibold text-ios-text dark:text-white mb-1">{perfil.nombre}</h1>
             <p className="text-ios-blue text-sm font-medium mb-4">{perfil.rol}</p>
 
             <h2 className="text-[12.5px] font-semibold uppercase tracking-wide text-ios-textSub dark:text-white/40 mb-1">
-              Objetivo profesional
+              Perfil profesional
             </h2>
             <p className="text-[14px] text-ios-text dark:text-white/90 leading-relaxed mb-4">{perfil.objetivo}</p>
-
-            <h2 className="text-[12.5px] font-semibold uppercase tracking-wide text-ios-textSub dark:text-white/40 mb-1">
-              Sobre mí
-            </h2>
-            <p className="text-[14px] text-ios-text dark:text-white/90 leading-relaxed mb-4">{perfil.sobreMi}</p>
 
             <h2 className="text-[12.5px] font-semibold uppercase tracking-wide text-ios-textSub dark:text-white/40 mb-1">
               Intereses

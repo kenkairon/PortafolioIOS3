@@ -2,9 +2,8 @@ export const perfil = {
   nombre: "Carlos Enrique Vásquez Colimilla",
   rol: "Desarrollador Web Full Stack",
   objetivo:
-    "Desarrollarme profesionalmente como Desarrollador Full Stack, participando en el diseño, desarrollo e implementación de aplicaciones web utilizando tecnologías como JavaScript, Python (Django) y Ruby on Rails. Busco integrarme a un equipo de desarrollo donde pueda aplicar mis conocimientos en tecnologías Front-End y Back-End, bases de datos MySQL y PostgreSQL, control de versiones con Git y GitHub, y metodologías ágiles. Mi objetivo es contribuir a la creación de soluciones tecnológicas eficientes, seguras y escalables, fortalecer mis competencias técnicas, adquirir experiencia profesional y asumir nuevos desafíos que me permitan crecer dentro del área de desarrollo de software.",
-  sobreMi:
-    "Desarrollador Full Stack con conocimientos en tecnologías Front-End y Back-End, desarrollo de aplicaciones web y gestión de bases de datos. Orientado a la creación de soluciones tecnológicas funcionales, eficientes y escalables, combinando conocimientos de programación y trabajo colaborativo. Me interesa participar en proyectos de desarrollo de software, aportar soluciones a problemas reales y continuar fortaleciendo mis competencias técnicas.",
+    "Desarrollador de Software orientado al desarrollo Full Stack, con formación y experiencia práctica en proyectos utilizando Python,Django, JavaScript, TypeScript y React. Cuento con conocimientos en desarrollo Front-End y Back-End, bases de datos SQL y PostgreSQL, y herramientas de control de versiones como Git y GitHub. Interesado en desarrollar soluciones web funcionales,eficientes y escalables, continuar fortaleciendo mis habilidades técnicas y aportar valor en equipos de desarrollo.",
+
   intereses: [
     "Fútbol",
     "Ping pong",
